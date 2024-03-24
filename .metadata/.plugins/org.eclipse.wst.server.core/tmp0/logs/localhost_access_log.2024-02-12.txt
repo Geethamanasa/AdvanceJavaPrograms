@@ -1,0 +1,10 @@
+127.0.0.1 - - [12/Feb/2024:20:47:37 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:47:38 +0530] "GET /Registration_Form/ HTTP/1.1" 404 773
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:47:38 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:47:55 +0530] "GET /Registration_Form/RegisterServlet.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:48:45 +0530] "GET /Registration_Form/RegisterServlet?username=geetha&password=geetha%40123&number=7816021182&email=geetharouthu2000%40gmail.com&Gender=FEMALE&qualification=on&qualification=on&qualification=on&qualification=on&Country=AMEERPET&Languages=English HTTP/1.1" 500 1284
+127.0.0.1 - - [12/Feb/2024:20:51:56 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:51:57 +0530] "GET /Registration_Form/ HTTP/1.1" 404 773
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:51:57 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:52:28 +0530] "GET /Registration_Form/ HTTP/1.1" 404 773
+0:0:0:0:0:0:0:1 - - [12/Feb/2024:20:53:33 +0530] "GET /Registration_Form/RegisterServlet?username=jaya&password=jaya%40123&number=7816021182&email=jaya%40gmail.com&Gender=FEMALE&qualification=on&qualification=on&qualification=on&qualification=on&Country=AMEERPET&Languages=Telugu HTTP/1.1" 500 1284

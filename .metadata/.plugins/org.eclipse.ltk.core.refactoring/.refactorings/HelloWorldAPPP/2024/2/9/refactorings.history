@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;lib&apos; to &apos;HelloWorldAPPP&apos;" description="Move &apos;lib&apos; to &apos;HelloWorldAPPP&apos;" destination="/HelloWorldAPPP" element1="/helloworld/src/main/webapp/WEB-INF/lib" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1708942551066" updateReferences="true"/>
+</session>

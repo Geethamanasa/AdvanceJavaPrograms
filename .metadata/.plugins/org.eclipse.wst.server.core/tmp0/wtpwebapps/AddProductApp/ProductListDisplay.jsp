@@ -1,0 +1,91 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page import="com.sathya.servlet.ProductDao"  import="java.util.Base64"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="a" %>
+
+<html>
+		<head>
+		<title>Product List</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script type="text/javascript" src="formvalidation.js"></script>
+		</head>
+		<body>
+		<div>
+		  <h1 class ="text-center text-success bg-dark">List Of Available Products....</h1>
+		</div>
+		<div>
+		  <a class="btn btn-warning" href="Addproduct.html">Save Product</a>
+		</div>
+		<div>
+		   <input type="text" placeholder="Search">
+		</div>
+		<div>
+		   <a:if test="${saveResult==1}">
+		   <h1 class="text-center text-primary">Data Inserted Successfully.....</h1>
+		   
+		   </a:if>
+		</div>
+		<div>
+		   <a:if test="${delete==1}">
+		   <h1 class="text-center text-danger">Data Deleted Successfully.....</h1>
+		   </a:if>
+		</div>
+		<div>
+		   <a:if test="${delete==0}">
+		   <h1 class="text-center text-danger">Data Deletion Fail.....</h1>
+		   </a:if>
+		</div>
+		
+		    <table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product cost</th>
+            <th>Brand</th>
+            <th>Made In</th>
+            <th>Manufacture</th>
+            <th>Expire Date</th>
+            <th>Images</th>
+            <th>Audio</th>
+            <th>Video</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+	      <tbody>
+		    <a:forEach var="product" items="<%=new ProductDao().findAll() %>">
+		    	<tr>
+		    		<td>${product.proId}</td>
+		    		<td>${product.proName}</td>
+		    		<td>${product.proPrice}</td>
+		    		<td>${product.proBrand}</td>
+		    		<td>${product.proMadeIn}</td>
+		    		<td>${product.proMfgDate}</td>
+		    		<td>${product.proExpireDate}</td>
+		    		
+		    		
+					 <!-- Display image using img tag -->
+                <td><img src="data:image/jpeg;base64,${Base64.getEncoder().encodeToString(product.proImage)}" Style="max-width:100px; max-height:100px;"></td>
+                
+                <!-- Display audio using audio tag -->
+                <td>
+                    <audio controls>
+                        <source src="data:audio/mp3;base64,${Base64.getEncoder().encodeToString(product.proAudio)}" type="audio/mpeg">
+                    </audio>
+                </td>
+                
+                <td>
+                    <video controls width="320" height="240">
+                        <source src="data:video/mp4;base64,${Base64.getEncoder().encodeToString(product.proVideo)}" type="video/mp4">
+                    </video>
+                </td>
+                <td>
+                	<a href="./DeleteProductServlet?proId=${product.proId}" class="btn btn-primary">Delete</a>
+                	<a href="./EditProductServlet?proId=${product.proId}" class="btn btn-primary">Edit</a>
+                </td>
+            </tr>
+        </a:forEach>
+    </tbody>
+    </table>
+</body>
+</html>

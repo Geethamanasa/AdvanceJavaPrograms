@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Add product</title>
+<!-- BootStrap CDN link to get the support of BootStrap -->
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- This is Java Script validation code location -->
+<script src="formvalidations.js"></script>
+
+
+</head>
+<body>
+<div class="container mt-5 text-center">
+<h2 class="text-center font-italic mb-1">Save Product Data...</h2>
+<form method="post" action="./AddProductServlet" enctype="multipart/form-data" onsubmit="return ValidateForm()">
+
+<div class="form-group">
+<label class="font-italic font-weight-bold" for="proId">Product ID:</label>
+<Input type="number" class="form-control-sm" id="proId" name="proId" required>
+</div>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="AddProductApp">
+        <property name="context-root" value="AddProductApp"/>
+        <property name="java-output-path" value="/AddProductApp/build/classes"/>
+    </wb-module>
+</project-modules>

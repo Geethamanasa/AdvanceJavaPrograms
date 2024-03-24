@@ -1,0 +1,126 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ page import="com.sathya.servlet.ProductDao"  import="java.util.Base64"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="a" %>
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is Edit Form</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+		
+</head>
+<body>
+
+<div class="container mt-5 text-center">
+		<h2 class="text-center font-italic mb-1">Save Product Details...</h2>
+		<form method="post"  action="UpdateProductServlet" enctype="multipart/form-data" onsubmit="return ValidateForm()">
+
+
+<!--<a:if test="${result==1}">
+		   <h1 class="text-center text-danger">Data Updated Successfully.....</h1>
+		   </a:if>
+		</div>
+		
+		<div>
+		   <a:if test="${result==0}">
+		   <h1 class="text-center text-danger">Data Updation Fail.....</h1>
+		   </a:if>
+		</div>-->
+
+
+		<div class="form-group">
+		<label class="font-italic font-weight-bold" for="proId">Product Id:</label>
+		<input type="text" class="form-control-sm" id="proId" name="proId" value="${existingproduct.proId}">
+		</div>
+		
+		
+		<div class="form-group">
+		<label class="font-italic font-weight-bold" for="proName">Product Name:</label>
+		<input type="text" class="form-control-sm" id="proName" name="proName" value="${existingproduct.proName}">
+		</div>
+				
+		<div class="form-group">
+		<label class="font-italic font-weight-bold" for="proPrice">Product Price:</label>
+		<input type="number" class="form-control-sm" id="proPrice" name="proPrice" value="${existingproduct.proPrice}">
+		</div>
+		
+		
+		<div class="form-group">
+		<label class="font-italic font-weight-bold" for="proBrand">Product Brand:</label>
+		<input type="text" class="form-control-sm" id="proBrand" name="proBrand" value="${existingproduct.proBrand}">
+		</div>
+		
+		
+		<div class="form-group">
+		<label class="font-italic font-weight-bold" for="proMadeIn">Made In:</label>
+		<input type="text" class="form-control-sm" id="proMadeIn" name="proMadeIn" value="${existingproduct.proMadeIn}">
+		</div>
+		
+		
+		<div class="form-group">
+		<label class="font-italic font-weight-bold" for="proMfgDate">Manufactured Date:</label>
+		<input type="date" class="form-control-sm" id="proMfgDate" name="proMfgDate" value="${existingproduct.proMfgDate}">
+		</div>
+		
+				
+		<div class="form-group">
+		<label class="font-italic font-weight-bold" for="eDate">Expire Date:</label>
+		<input type="date" class="form-control-sm" id="proExpireDate" name="proExpireDate" value="${existingproduct.proExpireDate}">
+		</div>
+		
+		
+		    
+			<div class="form-group">
+				<label class="font-italic font-weight-bold" for="proImage">Current Product Image:</label>
+				<img src="data:image/jpeg;base64,${Base64.getEncoder().encodeToString(existingproduct.proImage)}" Style="max-width:100px; max-height:100px;" alt="current product image">
+				<input type="hidden" id="existingImage" name="existingImage" value="${Base64.getEncoder().encodeToString(existingproduct.proImage)}">
+				
+			</div>
+			
+			<div class="form-group">
+				<label class="font-italic font-weight-bold" for="proImage">New Product Image:</label>
+				<input type="file" id="newProImage" name="newProImage" accept="image/*">
+				
+			</div>
+			
+	<!--  		<div class="form-group">
+				<label class="font-italic font-weight-bold" for="proAudio">Current Product Audio:</label>
+				<audio controls>
+                        <source src="data:audio/mp3;base64,${Base64.getEncoder().encodeToString(existingProduct.proAudio)}" type="audio/mp3">
+                 </audio>
+				<input type="hidden" id="existingAudio" name="existingAudio" value="${Base64.getEncoder().encodeToString(existingProduct.proAudio)}">
+				
+			</div>
+			
+			<div class="form-group">
+				<label class="font-italic font-weight-bold" for="newProAudio">New Product Audio:</label>
+				<input type="file" id="newProAudio" name="newProAudio" accept="audio/*">
+				
+			</div>
+			-->
+			
+		<!-- 	<div class="form-group">
+				<label class="font-italic font-weight-bold" for="proAudio">Current Product Video:</label>
+				<video controls width="320" height="240">
+                        <source src="data:video/mp4;base64,${Base64.getEncoder().encodeToString(existingProduct.proVideo)}" type="video/mp4">
+                  </video>
+				<input type="hidden" id="existingVideo" name="existingVideo" value="${Base64.getEncoder().encodeToString(existingProduct.proVideo)}">
+				
+			</div>
+			
+			<div class=;"form-group">
+				<label class="font-italic font-weight-bold" for="newProVideo">New Product Video:</label>
+				<input type="file" id="newProVideo" name="newProVideo" accept="video/*">
+				
+			</div>
+			 -->
+			
+		
+			
+			<div class="form-group">
+		  <input type="submit" class="btn btn-success" value="Update Product"/>
+		  </div>
+		  </form>
+</body>
+</html>

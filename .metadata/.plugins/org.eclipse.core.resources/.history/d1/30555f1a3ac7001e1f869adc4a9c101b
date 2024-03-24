@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title> Generating_Number_Series</title>
+	</head>
+	<body  bgcolor ="plum">
+		<h1>..Generate_Sreies...</h1>
+		<form method = "get" action = "./GeneratingNumberServlet">
+			<h3>Select Range....</h3>
+			
+			<br><br>
+			
+			<lable> From : </lable>
+			<input type = "number" name = "from" reqired/>
+			<br><br>
+			
+			<lable> To: </lable>
+			<input type = "number" name = "to" reqired/>
+			
+			<br><br>
+			
+			<input type="submit" value= "even" name="Operation"/>
+			<input type="submit" value= "odd" name="Operation"/>
+			<input type="submit" value= "prime" name="Operation"/>
+			<input type="submit" value= "strong" name="Operation"/>
+			<input type="submit" value= "perfect" name="Operation"/>
+			</form>
+	</body>
+</html>

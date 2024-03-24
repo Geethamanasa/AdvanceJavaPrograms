@@ -1,0 +1,15 @@
+127.0.0.1 - - [25/Feb/2024:20:38:36 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/Feb/2024:20:38:36 +0530] "GET /HttpCookiesEx/Form3.html HTTP/1.1" 200 349
+0:0:0:0:0:0:0:1 - - [25/Feb/2024:20:38:37 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [25/Feb/2024:21:03:42 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/Feb/2024:21:03:42 +0530] "GET /HttpCookiesEx/ThirdServlet HTTP/1.1" 405 751
+0:0:0:0:0:0:0:1 - - [25/Feb/2024:21:03:43 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [25/Feb/2024:21:03:52 +0530] "GET /HttpCookiesEx/ThirdServlet HTTP/1.1" 405 751
+0:0:0:0:0:0:0:1 - - [25/Feb/2024:21:09:47 +0530] "GET /HttpCookiesEx/ThirdServlet HTTP/1.1" 405 751
+0:0:0:0:0:0:0:1 - - [25/Feb/2024:21:09:54 +0530] "GET /HttpCookiesEx/ThirdServlet.html HTTP/1.1" 404 786
+0:0:0:0:0:0:0:1 - - [25/Feb/2024:21:10:05 +0530] "GET /HttpCookiesEx/ThirdServlet HTTP/1.1" 405 751
+0:0:0:0:0:0:0:1 - - [25/Feb/2024:21:16:52 +0530] "GET /HttpCookiesEx/ThirdServlet HTTP/1.1" 405 751
+0:0:0:0:0:0:0:1 - - [25/Feb/2024:21:20:22 +0530] "GET /HttpCookiesEx/ThirdServlet HTTP/1.1" 405 751
+127.0.0.1 - - [25/Feb/2024:21:33:24 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/Feb/2024:21:33:25 +0530] "GET /HttpCookiesEx/ThirdServlet HTTP/1.1" 405 751
+0:0:0:0:0:0:0:1 - - [25/Feb/2024:21:33:34 +0530] "GET /HttpCookiesEx/ThirdServlet HTTP/1.1" 405 751

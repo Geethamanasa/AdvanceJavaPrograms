@@ -1,0 +1,15 @@
+127.0.0.1 - - [07/Feb/2024:15:46:39 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:46:39 +0530] "GET /LoginNames/ HTTP/1.1" 404 766
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:46:40 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:46:57 +0530] "GET /LoginNames/loginname.html HTTP/1.1" 404 780
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:47:06 +0530] "GET /LoginNames/loginName.html HTTP/1.1" 404 780
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:47:22 +0530] "GET /LoginNames/LoginName.html HTTP/1.1" 200 560
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:48:15 +0530] "GET /LoginNames/LoginName.html HTTP/1.1" 200 557
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:48:41 +0530] "GET /LoginNames/LoginName.html HTTP/1.1" 200 558
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:48:56 +0530] "GET /LoginNames/LoginNameSrevlet?firstname=geetha&middlename=routhu&lastname=r HTTP/1.1" 405 751
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:49:54 +0530] "GET /LoginNames/LoginNameSrevlet?firstname=geetha&middlename=routhu&lastname=r HTTP/1.1" 405 751
+127.0.0.1 - - [07/Feb/2024:15:50:20 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:50:20 +0530] "GET /LoginNames/ HTTP/1.1" 404 766
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:50:21 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:50:30 +0530] "GET /LoginNames/LoginName.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/Feb/2024:15:50:51 +0530] "GET /LoginNames/LoginNameSrevlet?firstname=geetha&middlename=routhu&lastname=r HTTP/1.1" 200 51
